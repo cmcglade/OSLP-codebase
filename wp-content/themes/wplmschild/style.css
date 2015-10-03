@@ -1,0 +1,133 @@
+/*
+Theme Name: WPLMS ChildTheme I
+Theme URI: http://www.VibeThemes.com    
+Description: Child Theme for WPLMS WordPress Theme
+Author: VibeThemes
+Author URI: http://themeforest.com/user/vibethemes
+Template: wplms
+Version: 1.0
+*/
+
+@import url("../wplms/style.css");
+
+header{
+	position: fixed;
+	background: rgba(255,255,255,0.6) !important;
+	webkit-transition: all 0.6s ease-in-out;
+  	-moz-transition: all 0.6s ease-in-out;
+  	-o-transition: all 0.6s ease-in-out;
+  	transition: all 0.6s ease-in-out;
+}
+
+header + #content + .stripe{
+	margin-top:-90px;
+}
+header + section,
+#grouptitle, #memberstitle, #activitytitle{
+	padding-top:120px;
+}
+header + section#content,
+header + section#title{
+	padding-top:90px;
+}
+#title{margin-top:0;}
+.topmenu{
+	float:right;
+}
+
+
+.topmenu li{
+	padding:30px 12px;
+	float:left;
+}
+
+.vbplogin:before{
+	content: '|';
+	font-family: 'Fonticon';
+	font-size: 16px;
+	margin-right: 5px;
+	float:left;
+}
+.vbpcart:before{
+	content: 'x';
+	float:left;
+	font-family: 'Fonticon';
+	font-size: 16px;
+	margin-right: 5px;
+}
+.vibe-bp-login a{color:#FFF;text-transform: uppercase;}
+.vbpcart em{
+	background: #78c8c9;
+	padding: 2px 5px;
+	border-radius: 50%;
+	font-style: normal;
+	font-family: sans-serif;
+	font-size: 11px;
+	font-weight: 800;
+}
+.logged-in .vbplogin:before{content:'';}
+.topmenu li a{
+	color:#6E6E6E;font-size:13px;
+	font-weight:800;
+	font-family:'Raleway',sans-serif;
+}
+#vibe_bp_login{top:80px;}
+
+#logo{float:left; }
+
+header #searchicon{padding: 28px 0 24px;}
+header.fixed #searchicon{padding: 8px 0 4px;}
+
+header #searchform{padding:0;}
+header #searchform input[type="text"]{
+	font-size: 35px;
+	background:rgba(0,0,0,0.6) !important;
+	color:#3d3d3d !important;
+	border-radius:0;
+	padding: 16px;}	
+header #searchdiv {
+	float: none;
+	padding: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	border: none;
+	color:#3d3d3d;
+}
+#trigger{top:30px;}
+#trigger .lines, .lines:before, .lines:after{background:#3d3d3d !important;}
+
+nav .menu li a, nav .menu li.current-menu-item a, header #searchicon{
+	color: #5f5f5f;
+}
+
+header.fixed #logo{margin-top:5px;}
+header.fixed #logo img{ max-height:50px;webkit-transition: all 0.6s ease-in-out;
+  	-moz-transition: all 0.6s ease-in-out;
+  	-o-transition: all 0.6s ease-in-out;
+  	transition: all 0.6s ease-in-out;}
+header.fixed nav .menu > li > a,
+header.fixed .topmenu li{padding-top:15px;padding-bottom:15px;
+	webkit-transition: all 0.6s ease-in-out;
+  	-moz-transition: all 0.6s ease-in-out;
+  	-o-transition: all 0.6s ease-in-out;
+  	transition: all 0.6s ease-in-out;}
+header.fixed #searchform input[type="text"]{font-size:20px;padding:12px;}
+header.fixed #trigger{top:10px;}
+@media (max-width: 991px) and (min-width: 768px){
+	#trigger {right: 0;}
+	header #searchicon {margin-right: 30px;}
+}
+@media (max-width: 1140px) and (min-width: 991px){
+	.vbplogin span{display: none;}
+}
+@media (max-width: 768px){
+.topmenu{margin-right:60px;}
+.woocommerce table.shop_table td, .woocommerce-page table.shop_table td{padding:10px 0;}
+.woocommerce table.cart th, .woocommerce table.cart td, .woocommerce #content table.cart th, .woocommerce #content table.cart td, .woocommerce-page table.cart th, .woocommerce-page table.cart td, .woocommerce-page #content table.cart th, .woocommerce-page #content table.cart td{font-size:11px;}
+.page .content, .single .content, .padder.content{padding:8px;}
+}
+@media (max-width: 460px){
+	.vbplogin span{display: none;}
+}
